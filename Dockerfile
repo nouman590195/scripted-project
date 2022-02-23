@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip nekmit.zip
 RUN cp -rvf nekmit/* .
 RUN rm -rf  nekmit.zip nekmit
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 8
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"] 
+EXPOSE 8 
